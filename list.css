@@ -1,0 +1,248 @@
+/* General stuff*/
+:root {
+  --main-bg: #3f50b5;
+  --main-bg-l: #757ce8;
+  --main-bg-d: #002884;
+  --sec-bg: #26a69a;
+  --sec-bg-l: #64d8cb;
+  --sec-bg-d: #00766c;
+  --black-txt: #000000;
+  --white-txt: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+/* Main page stuff*/
+.container-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 50vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-div {
+  height: 50%;
+  width: 100%;
+}
+
+.input-stock {
+  width: 100%;
+  height: 80%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--main-bg-l);
+  text-align: center;
+  font-size: 4rem;
+  color: var(--main-bg-d);
+  text-transform: uppercase;
+}
+
+.input-stock:focus {
+  background-color: #d1d9ff;
+}
+
+.btn {
+  width: 100%;
+  height:100%;
+  outline: none;
+  border: none;
+  background-color: var(--main-bg);
+  color: var(--white-txt);
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background-color: var(--main-bg-l);
+}
+
+/* Stock data stuff*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-div {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: var(--main-bg-d);
+  padding-bottom: 10px;
+  background-color: #e8eaf6;
+  margin-bottom: 0px;
+}
+
+.price-div {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: var(--main-bg-d);
+  background-color: #e3f2fd;
+  margin-bottom: 0px;
+}
+
+.card-div {
+  width: 100%;
+  height: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2px;
+  background-color: #e8eaf6;
+  border-bottom: 1px solid var(--main-bg-d);
+  border-top: 1px solid var(--main-bg-d);
+}
+
+.section-card {
+  height: 100%;
+}
+
+.section-button {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg);
+  color: var(--white-txt);
+  border: none;
+  outline: none;
+}
+
+.section-button:hover {
+  background-color: var(--main-bg-l);
+}
+
+.content-div {
+  width: 100%;
+  height: 70%;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+h2, h1 {
+  text-align: center;
+  color: var(--main-bg-d);
+}
+
+.basic-div, .technical-div {
+  height: 100%;
+  width: 42.5%;
+  justify-content: left;
+}
+.pad {
+  height: 100%;
+  width: 5%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: var(--main-bg);
+  color: white;
+  max-width: 300px;
+}
+
+.pad2 {
+  height: 100%;
+  width: 27.5%;
+}
+.graph-div {
+  height: 100%;
+  width: 80%;
+}
+
+.left-div, .right-div {
+  height: 100%;
+  width: 42.5%;
+  justify-content: left;
+}
+
+.content-value {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-content-div {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bot-content-div {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  color: var(--main-bg-d);
+  background-color: #e3f2fd;
+  margin-bottom: 0px;
+}
+
+.calc-button {
+  width: 100%;
+  height: 10%;
+  background-color: var(--main-bg);
+  color: var(--white-txt);
+  border: none;
+  outline: none;
+  margin-top: 10px;
+}
+
+.calc-button:hover {
+  background-color: var(--main-bg-l);
+}
+
+th a {
+  text-decoration: none;
+  color: white;
+}
+
+td a {
+  text-decoration: none;
+  color: var(--main-bg-d);
+}
+
+.padding {
+  width: 10%;
+}
+
+.data {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
